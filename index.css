@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    background: url();
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner header h2
+{
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 6px;
+
+}
+
+.banner header ul
+{
+    display: flex;
+}
+.banner header ul li
+{
+    margin: 0px 20px;
+}
+.banner header ul li a 
+{
+    color: #fff;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.banner header ul li a:hover
+{
+    background-color: rgba(248, 50, 156);
+    color: #000;
+}
+
+.banner .bannerContent
+{
+     z-index: 2;  
+}
+.banner .bannerContent h2
+{
+    color: #fff;
+    font-size: 5em;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 500;
+    text-shadow: 0 0 20px #000,
+    0 0 40px #000,
+    0 0 60px #000,
+    0 0 80px #000;
+}
+.banner .bannerContent button
+{
+    margin: 0px 30px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    width: 35%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-size: 15px;
+    font-weight: bold;
+    /* box-sizing: border-box; */
+}
+.banner .bannerContent button:hover
+{
+    background-color: rgba(248, 50, 156);
+    color: black;
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+.about
+{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    background: url(images/ab1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.about::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(180, 180, 180, 0.8);
+}
+.about .row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.about .row .col50
+{
+    position: relative;
+    width: 43%;
+}
+.about .titletext
+{
+    color: #000;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: -90px;
+    margin-left: 40px;
+}
+.about .titletext span
+{
+    color: red;
+    font-size: 2em;
+}
+.about p{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 28px;
+    text-align: justify;
+    color: 19, 18, 18 ,0.897;
+    margin-left: 40px;
+
+}
+.about button
+{
+    margin-top: 45px;
+    padding: 10px 10px;
+    width: 160px;
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.about button:hover{
+    background-color: rgb(248, 50, 156);
+    color: black;
+    transform: scale(1.1);
+    /* margin-left: 20px; */
+    font-weight: 550;
+}
+.about .col50 .imageBx
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(248, 50, 156);
+    border-radius: 7px;
+    /* box-sizing: border-box; */
+    margin-top: -20px;
+}
+.about .col50 .imageBx img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1s;
+    border-radius: 7px;
+    cursor: pointer;
+    background-position: center;
+}
+.about .col50 .imageBx img:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+.Albums
+{
+    padding: 90px;
+    /* height: 100vh; */
+    width: 100%;
+    box-sizing: border-box;
+    background: url(images/b1.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.Albums::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.Albums h2 span
+{
+    color: red;
+    font-size: 1.5em;
+}
+.Albums h2
+{
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: -40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.Albums .card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    /* border: 2px solid black; */
+}
+.Albums .card .box
+{
+    height: 150px;
+    width: 200px;
+    margin-bottom: 60px;
+    /* border: 1px solid rgb(46, 45, 45); */
+}
+.Albums .card .box .imagebx
+{
+    height: 160px;
+    width: 200px;
+    padding: 10px 10px;
+}
+.Albums .card .box .imagebx img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    position: relative;
+}
+.Albums .card .box .imagebx img:hover
+{
+    transform: scale(0.9);
+}
+.Albums .card .text
+{
+    padding: 10px 10px;
+}
+.Albums .card .text h2
+{
+    color: rgb(255, 253, 253);
+    font-size: 11.5px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1px;
+    position: relative;
+}
+.Albums .card .text h4
+{
+    color: rgb(255, 250, 250);
+    font-size: 9px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5px;
+    position: relative;
+    margin-left: 10px;
+}
+.Albums button
+{
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 150px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 40px;
+    position: relative;
+    color: whitesmoke;
+}
+.Albums button:hover
+{
+    background-color: rgb(248, 50, 156);
+    color: black;
+    transform: scale(1.1);
+    /* margin-left: 20px; */
+    font-weight: 550;
+    /* margin-top: 60px; */
+}
+.extra
+{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(66, 64, 64);
+}
+.concerts
+{
+    width: 100%;
+    height: 100vh;
+    /* padding: 15px; */
+    box-sizing: border-box;
+    background: url(images/ad3.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    position: relative;
+}
+.concerts::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.concerts h2
+{
+    font-size: 3.5em;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    color: white;
+    padding: 60px 0;
+    /* margin-top: 0; */
+    /* margin-top: 70px; */
+    /* display: flex; */
+}
+.concerts h2 span
+{
+    color: red;
+    font-size: 1.7em;
+
+}
+.concerts h2 .go
+{
+    /* color: pink; */
+    font-size: 1.2em;
+    color: white;
+
+}
+.concerts h2 .out
+{
+    font-size: 1.2em;
+    color: white;
+}
+.Card
+{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 50px;
+}
+.Card .Box
+{
+    width: 220px;
+    border: 1px solid rgb(46, 45, 45);
+}
+.Card .Box .imageBx
+{
+    height: 380px;
+    width: 290px;
+    object-fit: contain;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* padding: 10px 10px; */
+}
+.Card .Box .imageBx img
+{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    object-fit: cover;
+    box-sizing: border-box;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    position: relative;
+}
+.Card .Text .box
+{
+    height: 80px;
+    width: 290px;
+    /* border: 2px solid black; */
+    /* justify-content: center; */
+    margin-top: -10px;
+    position: relative;
+    background-color: #ffffff;
+}
+.Card .Text .box h2
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    object-fit: cover;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    position: relative;
+    padding: 10px 5px;
+}
+.Card .Text .box h4
+{
+    font-size: 1em;
+    font-weight: 300;
+    object-fit: cover;
+    text-align: center;
+    box-sizing: border-box;
+    color: red;
+    /* margin-top: 90px; */
+    position: relative;
+    /* padding: -10px -5px; */
+    margin-top: -15px;
+}
+
+.Artist
+{
+    padding: 100px;
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* display: flex; */
+    background: url(images/ad3.jpg);
+    position: relative;
+}
+.Artist::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.Artist h2
+{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+.Artist h2 span
+{
+    font-size: 1.3em;
+    color: red;
+}
+
+.Artist .cards1
+{
+    display: flex;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.Artist .box
+{
+    /* margin-top: 30px; */
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid rgb(83, 81, 81); */
+    /* position: relative; */
+}
+.Artist .box .imgBx
+{
+    /* display: flex; */
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+.Artist .box .imgBx img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.Artist .box .imgBx:hover img
+{
+    transform: scale(1.1);
+}
+.Artist .box .Text
+{
+    margin-top: 10px;
+    text-align: center;
+}
+.Artist .box .Text h4
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
